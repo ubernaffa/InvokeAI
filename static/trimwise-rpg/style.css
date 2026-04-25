@@ -1,0 +1,57 @@
+:root {
+  --bg: #11131a;
+  --panel: #1a1f2e;
+  --trimwise-red: #9f1737;
+  --trimwise-orange: #ef8e2c;
+  --text: #eef2ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Trebuchet MS", "Verdana", sans-serif;
+  color: var(--text);
+  background: radial-gradient(circle at top, #2b1d32, var(--bg));
+}
+
+.game-shell {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #ffdcb0;
+  text-shadow: 0 2px 0 #000;
+}
+
+header p {
+  margin: 0.4rem 0 1rem;
+  color: #e5b8a1;
+}
+
+canvas {
+  display: block;
+  width: min(100%, 960px);
+  border: 4px solid #000;
+  image-rendering: pixelated;
+  background: #0c0e13;
+  box-shadow: 0 0 0 3px #532c44;
+}
+
+.hud {
+  margin-top: 0.8rem;
+  background: var(--panel);
+  border: 2px solid #332f4d;
+  padding: 0.75rem;
+  line-height: 1.4;
+}
+
+.hud p {
+  margin: 0.25rem 0;
+}
